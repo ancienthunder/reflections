@@ -1,3 +1,29 @@
 What happens when you initialize a repository? Why do you need to do it?
 	A new repository is created. A .git meta data is added to the folder and an initial commit by the git is made. It is not actually a commit though.
 	It is needed to initialize a repository for a new project.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	Staging area is basically a temporary buffer into which we can files from the working directory which have been changed and then add it to the updated respoitory. It allows us to pick and chose which files require committing and thus, offers flexibility.
+
+How can you use the staging area to make sure you have one commit per logical change?
+	Only add files to the staging area when you are ready to commit and add only those files where logical changes have happened.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	We usually want to add new features we may or may not work out and want to keep a working copy of the code from before. So, we use branches to make this work.
+	Branches helps by branching off from the original linear sequence of commits to a commit which only commits on the branch we want it to.
+
+How do the diagrams help you visualize the branch structure?
+	Diagrams help in visualizing the branch structure better as git could have a non-linear series of branches. Also, helps in understanding reachability of commits.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	Merging two branches results in the merging of all files of one branch with another. 
+	It is represented in that way because this commit has two parents.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Pros:
+		Easy to merge, doesn't take time.
+		Can specify what branches needed to be merged.
+	Cons:
+		Cannot understand semantics.
+		Could easily break the code.
+		Needs user assistance to resolve conflicts.
