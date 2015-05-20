@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+	A new repository is created. A .git meta data is added to the folder and an initial commit by the git is made. It is not actually a commit though.
+	It is needed to initialize a repository for a new project.
